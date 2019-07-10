@@ -1,19 +1,16 @@
-const add = require('../main');
+const caculateItemCounts = require('../main');
 
 it ('should add two numbers', () => {
-    expect(add(2, 3)).toBe(5);
+    expect(caculateItemCounts(['0001', '0003', '0005', '0003'])).toBe(true);
+    // console.log(caculateItemCounts(['0001', '0003', '0005', '0003']))
 });
 
-const isInRangeOf1to1000 = require('../main');
+// const getAllData = require('../main');
+// it ('should add two numbers', () => {
+//     expect(getAllData()).toBe(true);
+// });
 
-it ('should return true when startNumber and endNumber in 1 to 1000', () => {
-    expect(isInRangeOf1to1000(2, 3)).toBe(true);
-});
-
-it ('should return true when startNumber and endNumber not in 1 to 1000', () => {
-    expect(isInRangeOf1to1000(0, 3)).toBe(true);
-});
-
-it ('should return true when startNumber and endNumber not in 1 to 1000', () => {
-    expect(isInRangeOf1to1000(10, 2000)).toBe(true);
-});
+// const getSingleItemPrice = require('../main');
+// it ('should add two numbers', () => {
+//     expect(getSingleItemPrice()).toBe(true);
+// });
